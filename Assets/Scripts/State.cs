@@ -23,6 +23,7 @@ public class State
     public virtual void Enter()
     {
         player.animator.SetBool(animationBoolName, true);
+        Debug.Log("Enter " + animationBoolName);
     }
 
     public virtual void Update()
@@ -34,8 +35,7 @@ public class State
     public virtual void Exit()
     {
         player.animator.SetBool(animationBoolName, false);
+        Debug.Log("Exit " + animationBoolName);
     }
-
-
 
 }
