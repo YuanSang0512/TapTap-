@@ -2,6 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ 这是控制背景跟随玩家移动的脚本
+ parallaxEffect是背景移动速度与玩家移动速度的比值
+*/
+
 public class ParallaxBackGround : MonoBehaviour
 {
     [SerializeField] private float parallaxEffect;

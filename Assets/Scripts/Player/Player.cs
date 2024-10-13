@@ -11,6 +11,7 @@ public class Player : Entity
     protected override void Awake()
     {
         base.Awake();
+
         stateMachine = new StateMachine();
 
         idleState = new PlayerIdleState(this, stateMachine, "Idle");

@@ -41,4 +41,9 @@ public class Entity : MonoBehaviour
             return;
         rb.velocity = new Vector2(_xVelocity, _yVelocity);
     }
+
+    public void SetBusy(bool _busy)
+    {
+        isBusy = _busy;
+    }
 }
