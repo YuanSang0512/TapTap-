@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Player : Entity
 {
+    public static Player instance {  get; private set; }
     public StateMachine stateMachine { get; private set; }
 
     public PlayerIdleState idleState { get; private set; }
@@ -11,6 +12,7 @@ public class Player : Entity
     protected override void Awake()
     {
         base.Awake();
+        instance = this;
         stateMachine = new StateMachine();
 
         idleState = new PlayerIdleState(this, stateMachine, "Idle");
