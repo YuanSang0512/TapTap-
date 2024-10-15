@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Fader
   layers:
   - Default
   - TransparentFX
@@ -12,7 +13,7 @@ TagManager:
   - Water
   - UI
   - Player
-  - 
+  - Tree
   - 
   - 
   - 
@@ -41,8 +42,14 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: GackGround
+  - name: BackGround
     uniqueID: 2253021325
+    locked: 0
+  - name: MidGround
+    uniqueID: 2821050265
+    locked: 0
+  - name: FrontGround
+    uniqueID: 3131556523
     locked: 0
   - name: Player
     uniqueID: 1177709201
