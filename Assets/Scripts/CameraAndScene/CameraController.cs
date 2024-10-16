@@ -20,8 +20,9 @@ public class CameraController : MonoBehaviour
             instance = this;
         else
             Destroy(this.gameObject);
-        DontDestroyOnLoad(this);
+        //DontDestroyOnLoad(this);
         screenFader = GameObject.Find("ScreenFader");
+        ///screenFader = FaderController.instance;
         animator = screenFader.GetComponent<Animator>();
         virtualCamera = GetComponentInChildren<CinemachineVirtualCamera>();
         //player = FindObjectOfType<Player>();

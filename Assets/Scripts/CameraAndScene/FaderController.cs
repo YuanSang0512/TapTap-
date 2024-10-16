@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class FaderController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public static FaderController instance;
 
-    // Update is called once per frame
-    void Update()
+    private void Awake()
     {
-        
+        DontDestroyOnLoad(gameObject);
+        if (instance == null)
+            instance = this;
+        else
+            Destroy(this.gameObject);
     }
 }
