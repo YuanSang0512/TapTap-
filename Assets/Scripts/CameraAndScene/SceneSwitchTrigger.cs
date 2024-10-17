@@ -13,6 +13,7 @@ public class SceneSwitchTrigger : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
+            EventManager.instance.SaveData();
             StartCoroutine(CameraController.instance.LoadScene(sceneName));
         }
     }
