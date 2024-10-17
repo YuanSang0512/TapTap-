@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 4051694362518297599}
   - component: {fileID: 7752644283331297104}
   - component: {fileID: 6850537576458134299}
+  - component: {fileID: 7477024248657716128}
+  - component: {fileID: 5936400838180770069}
   m_Layer: 7
   m_Name: Tree_1
   m_TagString: Untagged
@@ -121,7 +123,7 @@ BoxCollider2D:
   m_Offset: {x: 0.050796807, y: 0.13919674}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.51362544, y: 0.013936716}
+    pivot: {x: 0.5, y: 0}
     oldSize: {x: 2.31, y: 2.86}
     newSize: {x: 2.31, y: 2.86}
     adaptiveTilingThreshold: 0.5
@@ -131,6 +133,128 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.72271776, y: 0.21025059}
   m_EdgeRadius: 0
+--- !u!114 &7477024248657716128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5615640301518495242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c489f051d13022e4dbabf311ecdb4e5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!60 &5936400838180770069
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5615640301518495242}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 2.31, y: 2.86}
+    newSize: {x: 2.31, y: 2.86}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.255, y: 0.28}
+      - {x: 0.255, y: 0.71}
+      - {x: 0.415, y: 0.75}
+      - {x: 0.445, y: 0.71}
+      - {x: 0.515, y: 0.69}
+      - {x: 0.59499997, y: 0.74}
+      - {x: 0.73499995, y: 0.75}
+      - {x: 0.875, y: 0.84999996}
+      - {x: 0.955, y: 0.9}
+      - {x: 1.0649999, y: 0.96}
+      - {x: 1.095, y: 0.98999995}
+      - {x: 1.115, y: 1.1}
+      - {x: 1.155, y: 1.16}
+      - {x: 1.155, y: 1.4399999}
+      - {x: 1.125, y: 1.52}
+      - {x: 1.155, y: 1.5699999}
+      - {x: 1.155, y: 1.6899999}
+      - {x: 1.135, y: 1.78}
+      - {x: 1.0849999, y: 1.93}
+      - {x: 1.025, y: 1.9699999}
+      - {x: 1.005, y: 2.1399999}
+      - {x: 0.97499996, y: 2.29}
+      - {x: 0.84499997, y: 2.34}
+      - {x: 0.765, y: 2.3899999}
+      - {x: 0.705, y: 2.57}
+      - {x: 0.59499997, y: 2.6299999}
+      - {x: 0.355, y: 2.71}
+      - {x: 0.305, y: 2.79}
+      - {x: 0.155, y: 2.78}
+      - {x: 0.005, y: 2.86}
+      - {x: -0.255, y: 2.86}
+      - {x: -0.36499998, y: 2.83}
+      - {x: -0.39499998, y: 2.75}
+      - {x: -0.505, y: 2.6499999}
+      - {x: -0.565, y: 2.6499999}
+      - {x: -0.66499996, y: 2.59}
+      - {x: -0.755, y: 2.45}
+      - {x: -0.755, y: 2.4099998}
+      - {x: -0.84499997, y: 2.2}
+      - {x: -0.895, y: 2.2}
+      - {x: -0.97499996, y: 2.1299999}
+      - {x: -1.005, y: 1.99}
+      - {x: -0.965, y: 1.87}
+      - {x: -1.055, y: 1.89}
+      - {x: -1.155, y: 1.77}
+      - {x: -1.155, y: 1.41}
+      - {x: -1.105, y: 1.3}
+      - {x: -1.045, y: 1.27}
+      - {x: -1.0749999, y: 1.15}
+      - {x: -1.025, y: 0.97999996}
+      - {x: -0.85499996, y: 0.84}
+      - {x: -0.685, y: 0.84}
+      - {x: -0.60499996, y: 0.76}
+      - {x: -0.475, y: 0.65999997}
+      - {x: -0.375, y: 0.65}
+      - {x: -0.265, y: 0.61}
+      - {x: -0.125, y: 0.7}
+      - {x: -0.13499999, y: 0.24}
+      - {x: -0.185, y: 0.16}
+      - {x: -0.305, y: 0.049999997}
+      - {x: -0.285, y: 0}
+      - {x: 0.445, y: 0}
+      - {x: 0.475, y: 0.049999997}
+      - {x: 0.305, y: 0.17}
+      - {x: 0.275, y: 0.26999998}
+  m_UseDelaunayMesh: 0
 --- !u!1 &7867352119758690728
 GameObject:
   m_ObjectHideFlags: 0
