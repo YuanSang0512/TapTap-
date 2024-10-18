@@ -22,6 +22,26 @@ public static class SaveSystem
         }
     }
 
+    //退出游戏调用
+    public static void SaveCurrentSceene(string _currentScene)
+    {
+        var json = JsonUtility.ToJson(_currentScene);
+        var path = Path.Combine(Application.persistentDataPath, "CurrentScene.data");
+        
+        File.WriteAllText(path, json);
+        Debug.Log("Save CurrentScene Succeed");
+    }
+
+    //继续游戏调用
+    public static string GetCurrentScene()
+    {
+        var path = Path.Combine(Application.persistentDataPath, "CurrentScene.data");
+
+        var json = File.ReadAllText(path);
+        var data = JsonUtility.FromJson<string>(json);
+        return data;
+    }
+
     //Load Data
     public static T LoadFromJson<T>(string saveFileName)
     {
@@ -76,5 +96,6 @@ public static class SaveSystem
         SaveSystem.SaveByJson("Sch_RoofTopEvent.data", null);
         SaveSystem.SaveByJson("SchoolEvent.data", null);
         SaveSystem.SaveByJson("Train_123Event.data", null);
+        //SaveSystem.SaveByJson("CurrentScene", null);
     }
 }

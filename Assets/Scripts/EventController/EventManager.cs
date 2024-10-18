@@ -17,6 +17,7 @@ public class EventManager : MonoBehaviour
 
     public class Data
     {
+        public string currentScene;
         public int eventIndex;
         public List<string> events;
     }
