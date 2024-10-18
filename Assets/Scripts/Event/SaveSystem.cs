@@ -36,9 +36,8 @@ public static class SaveSystem
         }
         catch (System.Exception e)
         {
-            #if UNITY_EDITOR
+            ClearData();
             Debug.Log(e.ToString());
-            #endif
             return default;
         }
 
@@ -61,6 +60,25 @@ public static class SaveSystem
             #endif
         }
     }
+    //退出游戏调用
+    public static void SaveCurrentSceene(string _currentScene)
+    {
+        //var json = JsonUtility.ToJson(_currentScene);
+        var path = Path.Combine(Application.persistentDataPath, "CurrentScene.data");
+
+        File.WriteAllText(path, _currentScene);
+        Debug.Log("Save CurrentScene Succeed");
+    }
+
+    //继续游戏调用
+    public static string GetCurrentScene()
+    {
+        var path = Path.Combine(Application.persistentDataPath, "CurrentScene.data");
+
+
+        return File.ReadAllText(path);
+    }
+
 
     //Clear Data
     public static void ClearData()
