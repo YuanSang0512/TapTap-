@@ -30,7 +30,7 @@ public class UI : MonoBehaviour
     {
         SaveSystem.ClearData();
 
-        SceneManager.LoadScene(++Index);
+        SceneManager.LoadScene("City");
     } 
     
     public void Gamebegin_Old()
