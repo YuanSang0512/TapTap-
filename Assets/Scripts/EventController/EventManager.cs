@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EventManager : MonoBehaviour
 {
@@ -28,9 +29,11 @@ public class EventManager : MonoBehaviour
         else
             Destroy(this.gameObject);
 
-        InitEventManager();
+        SaveSystem.SaveCurrentSceene(SceneManager.GetActiveScene().name);//保存当前场景名称
 
-        LoadData();
+        InitEventManager();//初始化场景事件
+
+        LoadData();//读取存档加载内容
     }
 
     private void InitEventManager()

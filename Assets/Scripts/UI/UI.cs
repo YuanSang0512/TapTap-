@@ -30,13 +30,13 @@ public class UI : MonoBehaviour
     {
         SaveSystem.ClearData();
 
-        SceneManager.LoadScene("City");
+        SceneManager.LoadScene("Forest");
     } 
     
     public void Gamebegin_Old()
     {
         string NowScene = SaveSystem.GetCurrentScene();
-        
+        Debug.Log(NowScene);
         
         SceneManager.LoadScene(NowScene);
 

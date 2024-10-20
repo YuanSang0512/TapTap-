@@ -46,8 +46,8 @@ public class ESC_UI : MonoBehaviour
         Entity.isBusy = false;
         Debug.Log("Exit");
         StartCoroutine(TimeDelay());
-        UnityEngine.SceneManagement.Scene NowScene = SceneManager.GetActiveScene();
-        SaveSystem.SaveCurrentSceene(NowScene.name);
+        //UnityEngine.SceneManagement.Scene NowScene = SceneManager.GetActiveScene();
+        //SaveSystem.SaveCurrentSceene(NowScene.name);
 
         #if UNITY_EDITOR
                 UnityEditor.EditorApplication.isPlaying = false;
